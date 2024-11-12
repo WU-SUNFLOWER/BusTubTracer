@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+}
+
+ul li {
+    list-style: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#main-wrapper {
+    display: flex;
+}
+
+#left-wrapper {
+    flex: 0 1 200px;
+    background: #ccc;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+#middle-wrapper {
+    flex: 1;
+}
+
+#middle-wrapper #viewer-wrapper {
+    overflow: hidden;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+#middle-wrapper svg {
+    left: 0px;
+    top: 0px;
+    position: absolute;
+}
+
+#right-wrapper {
+    flex: 0 1 400px;
+    background: #ccc;
+    overflow: hidden;
+    min-height: 100vh;
+}
+
+#inspector-wrapper {
+    padding-top: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+#inspector-wrapper ul li {
+    display: flex;
+    flex-direction: row;
+}
+
+#inspector-wrapper ul li .attr-name {
+    width: 45%;
+}
+
+#inspector-wrapper ul li .attr-value {
+    background: #666;
+    color: #fff;
+    border-radius: 5px;
+    flex: 1;
+}

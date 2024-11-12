@@ -1,0 +1,34 @@
+<html>
+    <head>
+        <script src="lib/d3.v7.js"></script>
+        <script src="js/index.js"></script>
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div id="main-wrapper">
+            <div id="left-wrapper">
+                左边栏
+            </div>
+            <div id="middle-wrapper">
+                <div id="viewer-wrapper">
+                
+                </div>
+            </div>
+            <div id="right-wrapper">
+                <div id="inspector-wrapper">
+                    <h1 id="node-tag">Projection</h1>
+                    <br>
+                    <ul id="node-attrs">
+                        <li><span class="attr-name">width</span><span class="attr-value">500px</span></li>
+                        <li><span class="attr-name">height</span><span class="attr-value">500px</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script>
+        window.onload = () => {
+            Init();
+        };
+        </script>
+    </body>
+</html>
